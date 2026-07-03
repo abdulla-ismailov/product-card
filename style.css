@@ -1,9 +1,4 @@
 
-body {
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-} 
-
 .title {
     font-size: 70px;
     font-weight: 400;
@@ -37,3 +32,20 @@ body {
 .button.green {
     background-color:#2ecc71;
 }
+
+.font-1 {
+    font-family: monospace, sans-serif;
+}
+
+    .cards {
+        display: flex;
+        gap: 24px; /*40*/
+    }
+
+.card {
+     margin-left: 500px;
+     display: greed;
+     grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
