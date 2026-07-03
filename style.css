@@ -1,51 +1,83 @@
 
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
 .title {
     font-size: 70px;
     font-weight: 400;
     line-height: 78px;
-    margin: 0;
-    margin-left: 250px;
+    text-align: center;
+    color: #515076;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.font-1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
     color: #515076;
 }
 
-.products-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.font-2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #515076;
 }
 
-.main-text {
+.font-3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
     font-size: 13px;
     line-height: 18px;
     color: #515076;
 }
 
-.button {
-    background-color: #515076;
-    color: #fff;
-    border: 1px solid #000;
-    border-radius: 5px;
-    padding: 10px 20px;
+.font-4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #515076;
+}
+
+.font-5 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     font-size: 20px;
+    line-height: 27px;
+    color: #515076;
 }
 
-.button.green {
-    background-color:#2ecc71;
+.price {
+    margin-left: 161px;
 }
-
-.font-1 {
-    font-family: monospace, sans-serif;
-}
-
-    .cards {
-        display: flex;
-        gap: 24px; /*40*/
-    }
 
 .card {
-     margin-left: 500px;
-     display: greed;
-     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    width: 300px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.distance {
+    margin: 100px;
 }
 
