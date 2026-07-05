@@ -23,7 +23,7 @@
     justify-content: center;
 }
 
-.product_title-1 {
+.product_word_price {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -31,7 +31,7 @@
     color: #515076;
 }
 
-.product_title-2 {
+.product_price {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -39,7 +39,7 @@
     color: #515076;
 }
 
-.product_title-3 {
+.product_description_and_compound {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 13px;
@@ -47,7 +47,7 @@
     color: #515076;
 }
 
-.product_title-4 {
+.product_subtitle {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -55,7 +55,7 @@
     color: #515076;
 }
 
-.product_title-5 {
+.product_name {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -63,8 +63,11 @@
     color: #515076;
 }
 
-.price {
-    margin-left: 158px;
+.price-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 20px;
 }
 
 .card {
@@ -75,9 +78,5 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     text-align: center;
     transition: transform 0.3s;
-}
-
-.distance {
-    margin: 100px;
 }
 
