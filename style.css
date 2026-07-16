@@ -80,3 +80,10 @@
     transition: transform 0.3s;
 }
 
+.product-bg {
+    background-image: url("images/photo_background.png");
+    background-repeat: no-repeat;
+    background-position: left 160px top 0px;
+    background-size: 800px 800px;
+};
+
