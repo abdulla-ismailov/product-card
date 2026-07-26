@@ -1,20 +1,19 @@
 // Покраска одной карточки
 
 
-const productCard = document.querySelector('.product'); 
-const buttonChangeColorCard = document.querySelector('#button-change-color-card'); 
+const productCard = document.querySelector('.product');
+const buttonChangeColorCard = document.querySelector('#button-change-color-card');
 const blueColor = 'rgb(0, 255, 242)';
 
 buttonChangeColorCard.addEventListener('click', () => {
     productCard.style.backgroundColor = blueColor
 })
 
-
 // Покраска всех карточек
 
 
-const productCards = document.querySelectorAll('.product'); 
-const buttonChangeColorCards = document.querySelector('#button-change-color-allCard'); 
+const productCards = document.querySelectorAll('.product');
+const buttonChangeColorCards = document.querySelector('#button-change-color-allCard');
 const yellowColor = 'rgb(242, 255, 0)';
 
 buttonChangeColorCards.addEventListener('click', () => {
@@ -27,41 +26,41 @@ buttonChangeColorCards.addEventListener('click', () => {
 
 const openPageGoogl = document.querySelector('#open-page-google');
 
-openPageGoogl.addEventListener('click', openGoogle )
+openPageGoogl.addEventListener('click', openGoogle)
 
 
 function openGoogle() {
     const answer = confirm('вы действительно хотите открыть Google?');
-    if (answer===true) {
-    window.open('https://google.com')
+    if (answer === true) {
+        window.open('https://google.com')
     }
 }
 
 // вывод консоль лог
 
 const outputConsolLogButton = document.querySelector('#buttonOutputeLog');
-outputConsolLogButton.addEventListener('click', () => outputConsolLog ('как дела?'))
+outputConsolLogButton.addEventListener('click', () => outputConsolLogButt('как дела?'))
 
-    function outputConsolLog(message) {
+function outputConsolLogButt(message) {
     alert(message)
     console.log(message)
-    }
+}
 
-    // вывод в консоль выбери продукт
+// вывод в консоль выбери продукт
 
 
-const outputChangeProduct = document.querySelector('.title');
-outputChangeProduct.addEventListener('mouseenter', () => outputConsolLog ('у меня норм'))
+const outputConsoleLog = document.querySelector('.title');
+outputConsoleLog.addEventListener('mouseenter', () => outputWordLog('у меня норм'))
 
-    function outputConsolLog(message) {
+function outputWordLog(message) {
     console.log(message)
-    }
+}
 
-    // 
+//кнопка ,которая меняет цвет
 
 const buttonChangeColor = document.querySelector('.button')
 buttonChangeColor.addEventListener('click', () => {
-if (buttonChangeColor.classList.contains('active')) {
+    if (buttonChangeColor.classList.contains('active')) {
         buttonChangeColor.classList.remove('active');
         buttonChangeColor.classList.add('active-2');
     } else {
