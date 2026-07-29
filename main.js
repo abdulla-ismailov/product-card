@@ -49,12 +49,12 @@ function outputConsolLogButt(message) {
 // вывод в консоль выбери продукт
 
 
-const outputConsoleLog = document.querySelector('.title');
-outputConsoleLog.addEventListener('mouseenter', () => outputWordLog('у меня норм'))
+const title = document.querySelector('.title');
 
-function outputWordLog(message) {
-    console.log(message)
-}
+title.addEventListener('mouseenter', () => {
+  console.log(title.textContent)
+});
+
 
 //кнопка ,которая меняет цвет
 
