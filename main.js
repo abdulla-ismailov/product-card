@@ -9,6 +9,7 @@ buttonChangeColorCard.addEventListener('click', () => {
     productCard.style.backgroundColor = blueColor
 })
 
+
 // Покраска всех карточек
 
 
@@ -36,7 +37,9 @@ function openGoogle() {
     }
 }
 
+
 // вывод консоль лог
+
 
 const outputConsolLogButton = document.querySelector('#buttonOutputeLog');
 outputConsolLogButton.addEventListener('click', () => outputConsolLogButt('как дела?'))
@@ -45,6 +48,7 @@ function outputConsolLogButt(message) {
     alert(message)
     console.log(message)
 }
+
 
 // вывод в консоль выбери продукт
 
@@ -57,6 +61,7 @@ title.addEventListener('mouseenter', () => {
 
 
 //кнопка ,которая меняет цвет
+
 
 const buttonChangeColor = document.querySelector('.button')
 buttonChangeColor.addEventListener('click', () => {
