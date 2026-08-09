@@ -1,11 +1,11 @@
 //вывод города и его температуры
 
 
-function announcementCityAndTemperature(showCitysWeather, showTemperature) {
+function showCityTemperat(showCitysWeather, showTemperature) {
     console.log(`Сейчас в ${showCitysWeather} температура — ${showTemperature} градусов по Цельсию`);
 }
 
-announcementCityAndTemperature('растике', '26')
+showCityTemperat('растике', '26')
 
 
 //скорость света
