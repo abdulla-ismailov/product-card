@@ -1,8 +1,8 @@
 //вывод города и его температуры
 
 
-function announcementCityAndTemperature(city, temperature) {
-console.log(`Сейчас в ${city} температура — ${temperature} градусов по Цельсию`);
+function announcementCityAndTemperature(showCitysWeather, showTemperature) {
+    console.log(`Сейчас в ${showCitysWeather} температура — ${showTemperature} градусов по Цельсию`);
 }
 
 announcementCityAndTemperature('растике', '26')
@@ -11,12 +11,12 @@ announcementCityAndTemperature('растике', '26')
 //скорость света
 
 
-const speedLight = 299792458;
+const SPEED_LIGHT = 299792458;
 
-if (25 > speedLight) {
-    console.log ('Сверхсветовая скорость')
+if (25 > SPEED_LIGHT) {
+    console.log('Сверхсветовая скорость')
 } else {
-    console.log ('Субсветовая скорость')
+    console.log('Субсветовая скорость')
 }
 
 
@@ -26,21 +26,15 @@ if (25 > speedLight) {
 const nameProduct = 'телефон';
 const priceProduct = 10000;
 
-if (12000 > priceProduct) {
-    console.log (`${nameProduct} приобретён. Спасибо за покупку!`)
-} else {
-    console.log ('Вам не хватает 3000, пополните баланс')
+function buyProduct(nameProduct, priceProduct) {
+    if (12000 > priceProduct) {
+        console.log(`${nameProduct} приобретён. Спасибо за покупку!`)
+    } else {
+        console.log('Вам не хватает 3000, пополните баланс')
+    }
 }
 
-
-//1 функция
-
-
-function numberGet() {
-    return 19;
-}
-
-console.log (numberGet())
+buyProduct(nameProduct, priceProduct);
 
 
 //3 переменные
@@ -50,6 +44,6 @@ let firstVariable = 9
 let secondVariable = 2
 let thirdVariable = 0
 
-console.log (firstVariable)
-console.log (secondVariable)
-console.log (thirdVariable)
+console.log(firstVariable);
+console.log(secondVariable);
+console.log(thirdVariable);
