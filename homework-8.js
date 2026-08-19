@@ -78,43 +78,43 @@ console.log(colors)
 
 const books = [
     {
-    title: '1984',
-    author: 'Джордж Оруэлл',
-    yearPublication: 1949,
-    coverColor: 'красный',
-    genre: 'антиутопия',
+        title: '1984',
+        author: 'Джордж Оруэлл',
+        yearPublication: 1949,
+        coverColor: 'красный',
+        genre: 'антиутопия',
     },
 
     {
-    title: 'Гарри Поттер и философский камень',
-    author: 'Дж. К. Роулинг',
-    yearPublication: 1997,
-    coverColor: 'Синий',
-    genre: 'Фэнтези',
+        title: 'Гарри Поттер и философский камень',
+        author: 'Дж. К. Роулинг',
+        yearPublication: 1997,
+        coverColor: 'Синий',
+        genre: 'Фэнтези',
     },
 
     {
-    title: 'Маленький принц',
-    author: 'Антуан де Сент-Экзюпери',
-    yearPublication: 1943,
-    coverColor: 'Жёлтый',
-    genre: 'Сказка',
+        title: 'Маленький принц',
+        author: 'Антуан де Сент-Экзюпери',
+        yearPublication: 1943,
+        coverColor: 'Жёлтый',
+        genre: 'Сказка',
     },
 
     {
-    title: 'Преступление и наказание',
-    author: 'Фёдор Достоевский',
-    yearPublication: 1866,
-    coverColor: 'Коричневый',
-    genre: 'Роман',
+        title: 'Преступление и наказание',
+        author: 'Фёдор Достоевский',
+        yearPublication: 1866,
+        coverColor: 'Коричневый',
+        genre: 'Роман',
     },
 
     {
-    title: 'Властелин колец',
-    author: 'Дж. Р. Р. Толкин',
-    yearPublication: 1954,
-    coverColor: 'Зелёный',
-    genre: 'Фэнтези',
+        title: 'Властелин колец',
+        author: 'Дж. Р. Р. Толкин',
+        yearPublication: 1954,
+        coverColor: 'Зелёный',
+        genre: 'Фэнтези',
     },
 ];
 
@@ -142,23 +142,23 @@ const booksHarryPotter = [{
     yearPublication: 1997,
     coverColor: 'Красный',
     genre: 'Фэнтези',
-    },
+},
 
-    {
+{
     title: 'Гарри Поттер и Тайная комната',
     author: 'Дж. К. Роулинг',
     yearPublication: 1998,
     coverColor: 'Зелёный',
     genre: 'Фэнтези',
-    },
+},
 
-    {
+{
     title: 'Гарри Поттер и узник Азкабана',
     author: 'Дж. К. Роулинг',
     yearPublication: 1999,
     coverColor: 'Синий',
     genre: 'Фэнтези',
-    },
+},
 ];
 
 
@@ -175,9 +175,9 @@ console.log(allBooks);
 function getRareBooks(arrayBooks) {
     return arrayBooks.map((book) => {
         const newBook = { ...book };
-        
+
         newBook.isRare = book.yearPublication > 2000;
-        
+
         return newBook;
     });
 }
