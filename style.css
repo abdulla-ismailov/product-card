@@ -1,9 +1,12 @@
-
 @font-face {
     font-family: "Montserrat";
     src: url("fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
     font-weight: 100 900;
     font-style: normal;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
 }
 
 .title {
@@ -12,9 +15,7 @@
     line-height: 78px;
     text-align: center;
     color: #515076;
-    font-family: "Montserrat", sans-serif;
 }
-
 
 .products {
     display: flex;
@@ -23,54 +24,49 @@
     justify-content: center;
 }
 
-.product_word_price {
-    font-family: "Montserrat", sans-serif;
+.price__word {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color: #515076;
 }
 
-.product_price {
-    font-family: "Montserrat", sans-serif;
+.price__numbers {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     color: #515076;
 }
 
-.product_description_and_compound {
-    font-family: "Montserrat", sans-serif;
+.product__description {
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
     color: #515076;
 }
 
-.product_subtitle {
-    font-family: "Montserrat", sans-serif;
+.product__subtitle {
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
     color: #515076;
 }
 
-.product_name {
-    font-family: "Montserrat", sans-serif;
+.product__name {
     font-weight: 700;
     font-size: 20px;
     line-height: 27px;
     color: #515076;
 }
 
-.price-block {
+.price {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px 20px;
 }
 
-.card {
+.product {
     width: 300px;
     background: white;
     border-radius: 15px;
@@ -85,5 +81,28 @@
     background-repeat: no-repeat;
     background-position: left 160px top 0px;
     background-size: 800px 800px;
-};
+}
 
+.product__compound-title {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #515076;
+}
+
+.product__compound-list {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #515076;
+}
+
+.active {
+    background-color: aqua;
+    color: white;
+}
+
+.active-2 {
+    background-color: rgb(200, 255, 0);
+    color: white;
+}
