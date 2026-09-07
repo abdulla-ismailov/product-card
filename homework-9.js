@@ -17,9 +17,7 @@ console.log(pruning);
 //массив кухонн приборов (вывода ножа).
 
 const kitchenAppliances = [
-    'spoon',
-    'fork',
-    'knife',
+    'spoon', 'fork', 'knife',
 ];
 
 const knife = kitchenAppliances.filter(applianc => applianc.includes('knife'));
@@ -68,12 +66,8 @@ console.log(onlyIdAndName);
 //добавляем свойство isInvalid
 
 comments.forEach(comment => {
-    if (comment.body.length > 187) {
-        comment.isInvalid = true;
-    } else {
-        comment.isInvalid = false;
-    }
-});
+    comment.body.length > 187 ? comment.isInvalid : comment.isInvalid 
+    });
 
 console.log(comments);
 
