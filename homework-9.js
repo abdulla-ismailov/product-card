@@ -6,9 +6,7 @@ console.log(comments);
 
 //массив чисел
 
-const numbers = [
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const pruning = numbers.slice(4, 10);
 
@@ -16,9 +14,7 @@ console.log(pruning);
 
 //массив кухонн приборов (вывода ножа).
 
-const kitchenAppliances = [
-    'spoon', 'fork', 'knife',
-];
+const kitchenAppliances = ['spoon', 'fork', 'knife',];
 
 const knife = kitchenAppliances.filter(applianc => applianc.includes('knife'));
 
@@ -26,9 +22,7 @@ console.log(knife);
 
 //переворачиватель массивов
 
-const alphabet = [
-    'a', 'b', 'c'
-];
+const alphabet = ['a', 'b', 'c'];
 
 alphabet.reverse();
 kitchenAppliances.reverse();
