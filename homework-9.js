@@ -39,11 +39,7 @@ console.log(containsComInMail);
 //изменение пост айди
 
 comments.forEach(comment => {
-    if (comment.id <= 5) {
-        comment.postId = 2;
-    } else {
-        comment.postId = 1;
-    }
+    comment.id <= 5 ? comment.postId = 2 : comment.postId = 1;
 });
 
 console.log(comments);
@@ -60,8 +56,8 @@ console.log(onlyIdAndName);
 //добавляем свойство isInvalid
 
 comments.forEach(comment => {
-    comment.body.length > 187 ? comment.isInvalid : comment.isInvalid 
-    });
+    comment.body.length > 187 ? comment.isInvalid : comment.isInvalid
+});
 
 console.log(comments);
 
